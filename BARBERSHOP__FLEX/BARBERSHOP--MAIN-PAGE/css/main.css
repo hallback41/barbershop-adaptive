@@ -1,0 +1,1335 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "PT_Sans_Narrow_Bold";
+  src: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/FONTS/PTN77F.ttf);
+}
+@font-face {
+  font-family: "PT_Sans_Narrow_Regular";
+  src: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/FONTS/PTN57F.ttf);
+}
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "PT_Sans_Narrow_Bold", sans-serif;
+  color: #f7f4f1;
+  font-style: normal;
+  border-color: #292929;
+  background-color: rgba(14, 13, 13, 0.4745098039);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.main-header__main-nav {
+  position: relative;
+  overflow: hidden;
+}
+
+.close-btn {
+  position: absolute;
+  padding: 25px 33px;
+  background-color: #6a4d38;
+  background-image: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/cross-icon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.container-centerer {
+  margin: 0 auto;
+}
+
+.main-header__wrapper {
+  max-width: 320px;
+}
+
+.main-header__logo {
+  background-color: #292929;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-header__logo-link {
+  display: block;
+  padding: 29px 0 20px;
+}
+
+.logo-link__tablet-img,
+.logo-link__desktop-img {
+  display: none;
+}
+
+.nav-wrapper {
+  display: none;
+}
+
+.nav-wrapper.active {
+  display: block;
+  background-color: rgba(14, 13, 13, 0.4745098039);
+}
+
+.main-nav__list {
+  position: relative;
+  top: 0;
+  left: 70px;
+}
+
+.main-nav__item {
+  background-color: #826550;
+  box-shadow: inset 5px 0 5px rgba(2, 2, 2, 0.209);
+}
+
+.site-list__item {
+  border-bottom: 1px solid #7a5c48;
+}
+
+.main-nav__link {
+  display: block;
+  padding: 18px 0 20px 20px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.user-list__item {
+  background-color: #6a4d38;
+  padding-bottom: 300px;
+}
+
+.main-nav__link--login-logo {
+  display: none;
+}
+
+.main-nav__mobile-view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #826550;
+  min-height: 50px;
+}
+
+.main-nav__title {
+  margin-left: 40%;
+}
+
+.main-nav__btn {
+  padding: 25px 35px;
+  background-color: #6a4d38;
+  border: transparent;
+  background-image: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/menu-icon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .close-btn {
+    display: none;
+  }
+  .main-header__main-nav {
+    overflow: visible;
+  }
+  .main-header__wrapper {
+    display: flex;
+    flex-direction: column;
+    min-width: 768px;
+  }
+  .main-header__logo {
+    order: 2;
+    min-height: 390px;
+    background-image: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/back-tablet.png);
+  }
+  .logo-link__mobile-img,
+  .logo-link__desktop-img {
+    display: none;
+  }
+  .main-header__logo {
+    align-items: flex-start;
+    padding-top: 10px;
+  }
+  .logo-link__tablet-img {
+    display: block;
+  }
+  .main-nav__mobile-view {
+    display: none;
+  }
+  .main-header__main-nav {
+    justify-content: space-between;
+    background-color: #000000;
+    padding: 0 64px;
+  }
+  .nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .main-nav__list {
+    display: flex;
+    gap: 33px;
+    left: 0;
+  }
+  .main-nav__item {
+    box-shadow: none;
+  }
+  .site-list__item {
+    border-bottom: none;
+  }
+  .main-nav__link {
+    display: block;
+    padding: 22px 0 21px 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+  }
+  .main-nav__item {
+    position: relative;
+  }
+  .main-nav__item--active::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #826550;
+  }
+  .main-nav__link--login {
+    display: none;
+  }
+  .main-nav__link--login-logo {
+    padding: 24px 30px 16px 10px;
+  }
+  .main-nav__item {
+    background-color: transparent;
+  }
+  .user-list__item {
+    background-color: transparent;
+    padding-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .main-header__wrapper {
+    min-width: 1200px;
+  }
+  .main-header__logo {
+    min-height: 618px;
+    background-image: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/back-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -75px;
+    padding-top: 28px;
+  }
+  .logo-link__tablet-img {
+    display: none;
+  }
+  .logo-link__desktop-img {
+    display: block;
+  }
+  .main-header__main-nav {
+    padding: 0 120px;
+  }
+  .main-nav__list {
+    gap: 65px;
+  }
+  .site-list__item:first-child {
+    margin-left: 32px;
+  }
+  .main-nav__item:hover {
+    background-color: rgba(30, 28, 28, 0.4901960784);
+  }
+  .main-nav__link--login {
+    position: relative;
+    padding: 23px 22px 24px 40px;
+  }
+  .main-nav__link--login::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 6px;
+    height: 16px;
+    width: 16px;
+    background-image: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/login.png);
+  }
+  .main-nav__link--login {
+    display: block;
+  }
+  .main-nav__link--login-logo {
+    display: none;
+  }
+}
+@font-face {
+  font-family: "PT_Sans_Narrow_Bold";
+  src: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/FONTS/PTN77F.ttf);
+}
+@font-face {
+  font-family: "PT_Sans_Narrow_regular";
+  src: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/FONTS/PTN57F.ttf);
+}
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "PT_Sans_Narrow_Bold", sans-serif;
+  color: #f7f4f1;
+  font-style: normal;
+  border-color: #292929;
+  background-color: rgba(14, 13, 13, 0.4745098039);
+}
+
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.container-centerer {
+  margin: 0 auto;
+}
+
+.container-inside {
+  padding: 0 20px;
+}
+
+.stats {
+  max-width: 320px;
+  background-color: #353535;
+}
+
+.stats__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 184px repeat(4, 79px);
+}
+
+.bg_1 {
+  background-color: #404040;
+}
+
+.bg_2 {
+  background-color: #4e4e4e;
+}
+
+.bg_3 {
+  background-color: #404040;
+}
+
+.bg_4 {
+  background-color: #4e4e4e;
+}
+
+.stats__disclaimer {
+  background-color: #fff;
+}
+.stats__disclaimer .stats__title {
+  display: block;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: black;
+  text-align: center;
+  line-height: 30px;
+  letter-spacing: 0.1px;
+  padding: 26px 0 17px 0;
+}
+.stats__disclaimer .stats__txt {
+  display: block;
+  padding: 0 20px;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 0.1px;
+  line-height: 26px;
+  font-family: "PT_Sans_Narrow_Regular";
+  padding-bottom: 27px;
+}
+
+.stats-item {
+  display: flex;
+  justify-content: space-between;
+}
+.stats-item .stats-item__amount {
+  font-size: 40px;
+  text-align: center;
+  padding: 16px 0 20px 20px;
+}
+.stats-item sup {
+  font-size: 22px;
+}
+.stats-item .stats-item__description {
+  width: 110px;
+  text-align: right;
+  line-height: 18px;
+  font-family: "PT_Sans_Narrow_regular";
+  padding-top: 18px;
+  padding-right: 20px;
+}
+
+@media (min-width: 768px) {
+  .bg_1 {
+    background-color: #404040;
+  }
+  .bg_2 {
+    background-color: #4e4e4e;
+  }
+  .bg_3 {
+    background-color: #353535;
+  }
+  .bg_4 {
+    background-color: #404040;
+  }
+  .stats {
+    position: relative;
+    max-width: 768px;
+  }
+  .container-inside {
+    padding: 0 64px;
+  }
+  .stats__wrapper {
+    position: inherit;
+    top: -185px;
+    height: 320px;
+    padding: 0 64px;
+    display: grid;
+    grid-template-columns: 320px 320px;
+    grid-template-rows: 185px repeat(2, 160px);
+    background-image: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/grey.png);
+    background-repeat: no-repeat;
+    background-position: 0px 185px;
+  }
+  .stats__disclaimer {
+    position: relative;
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .stats__disclaimer::before {
+    content: "* — приведённые данные ложь";
+    position: absolute;
+    top: 130px;
+    left: 40px;
+    color: rgba(0, 0, 0, 0.474);
+    font-size: 20px;
+    font-family: "PT_Sans_Narrow_regular";
+  }
+  .stats__disclaimer::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 45px;
+    left: -20px;
+    border: 20px solid white;
+    border-top-color: white;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+  }
+  .stats__disclaimer .stats__title {
+    width: 260px;
+    padding: 33px 0px 0px 42px;
+    font-size: 40px;
+    text-transform: none;
+    line-height: 38px;
+    text-align: start;
+  }
+  .stats__disclaimer .stats__txt {
+    display: block;
+    width: 210px;
+    text-align: start;
+    padding: 35px 0 0 50px;
+  }
+  .stats-item {
+    flex-direction: column;
+    padding-left: 34px;
+  }
+  .stats-item .stats-item__amount {
+    font-size: 70px;
+    text-align: start;
+    padding: 34px 0 0 0;
+  }
+  .stats-item .stats-item__amount sup {
+    font-size: 38px;
+  }
+  .stats-item .stats-item__description {
+    width: 200px;
+    font-size: 20px;
+    text-align: start;
+    padding-bottom: 35px;
+  }
+}
+@media (min-width: 1200px) {
+  .stats {
+    position: relative;
+    max-width: 1200px;
+  }
+  .stats__wrapper {
+    position: relative;
+    top: -160px;
+    height: 160px;
+    padding: 0 120px;
+    grid-template-columns: 320px 320px 320px;
+    grid-template-rows: repeat(2, 160px);
+    background-image: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/grey-desktop.png);
+    background-position: 0px 160px;
+  }
+  .stats__wrapper .stats__disclaimer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .stats__wrapper .stats__disclaimer::before {
+    top: 265px;
+    left: 40px;
+  }
+  .stats__wrapper .stats__disclaimer::after {
+    top: 40px;
+    left: -22px;
+    border: 22px solid white;
+    border-top-color: white;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+  }
+  .stats__wrapper .stats__disclaimer .stats__txt {
+    padding: 45px 0 0 40px;
+  }
+}
+.features {
+  max-width: 320px;
+  background-color: #242424;
+  background-image: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/features__footer.png);
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+}
+
+.features__wrapper {
+  overflow: hidden;
+}
+
+.slider__slide {
+  position: relative;
+}
+
+.slider__slide input {
+  display: none;
+}
+
+#btn-1:checked ~ .slider-controls label[for=btn-1],
+#btn-2:checked ~ .slider-controls label[for=btn-2],
+#btn-3:checked ~ .slider-controls label[for=btn-3] {
+  background-color: white;
+}
+
+.slider-controls {
+  position: inherit;
+  padding-top: 15px;
+  padding-left: 120px;
+}
+
+.slider-controls label {
+  display: inline-block;
+  margin: 0 5px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid white;
+  rotate: 45deg;
+  cursor: pointer;
+}
+
+.features__slider {
+  width: 300%;
+}
+.features__slider .features__item {
+  width: 320px;
+  float: left;
+}
+.features__slider .features__item .features__logo {
+  padding: 35px 0 0 113px;
+}
+.features__slider .features__item .features__title {
+  font-size: 30px;
+  padding: 29px 0 0 115px;
+}
+.features__slider .features__item .features__txt {
+  padding: 18px 40px 80px 40px;
+  font-size: 20px;
+  text-align: center;
+  font-family: "PT_Sans_Narrow_Regular";
+}
+.features__slider #btn-1:checked ~ .features__items .features__item {
+  transform: translate(0);
+}
+.features__slider #btn-2:checked ~ .features__items .features__item {
+  transform: translate(-320px);
+}
+.features__slider #btn-3:checked ~ .features__items .features__item {
+  transform: translate(-640px);
+}
+
+.features__footer {
+  border: 1px solid black;
+}
+
+@media (min-width: 768px) {
+  .features {
+    max-width: 768px;
+    height: 574px;
+    background-image: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/features__footer--tablet.png);
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+  }
+  .slider-controls {
+    display: none;
+  }
+  .features__items {
+    display: flex;
+    flex-direction: column;
+  }
+  .features__items .features__item {
+    position: relative;
+    display: flex;
+    width: 768px;
+  }
+  .features__items .features__item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+    width: 600px;
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.294);
+  }
+  .features__items .features__item .features__logo {
+    padding: 42px 0 40px 95px;
+    height: 94px;
+    width: 95px;
+  }
+  .features__items .features__item .item__body {
+    width: 480px;
+  }
+  .features__items .features__item .item__body .features__title {
+    font-size: 30px;
+    padding: 40px 0 0 35px;
+  }
+  .features__items .features__item .item__body .features__txt {
+    display: block;
+    padding: 20px 320px 0 35px;
+    width: 100%;
+    font-size: 20px;
+    text-align: start;
+    font-family: "PT_Sans_Narrow_Regular";
+  }
+  #btn-1:checked ~ .features__items .features__item {
+    transform: translate(0);
+  }
+  #btn-2:checked ~ .features__items .features__item {
+    transform: translate(0px);
+  }
+  #btn-3:checked ~ .features__items .features__item {
+    transform: translate(0px);
+  }
+}
+@media (min-width: 1200px) {
+  .features {
+    max-width: 1200px;
+    height: 460px;
+    background-image: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/features__footer--desktop.png);
+  }
+  .slider__slide {
+    padding: 0 120px;
+  }
+  .features__items {
+    display: flex;
+    flex-direction: row;
+  }
+  .features__items .features__item {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+  }
+  .features__items .features__item::after {
+    height: 0px;
+  }
+  .features__items .features__item .features__logo {
+    padding: 82px 0 0px 115px;
+    height: 94px;
+    width: 95px;
+  }
+  .features__items .features__item .item__body {
+    width: 280px;
+  }
+  .features__items .features__item .item__body .features__title {
+    font-size: 30px;
+    padding: 30px 0 0 115px;
+  }
+  .features__items .features__item .item__body .features__txt {
+    display: block;
+    padding: 20px 320px 0 45px;
+    width: 250px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "PT_Sans_Narrow_Regular";
+  }
+}
+.news {
+  max-width: 320px;
+  background-color: #f8f5f2;
+  color: black;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.378);
+}
+
+.news__wrapper {
+  padding: 0 20px;
+}
+
+.news__title {
+  padding-top: 38px;
+  padding-bottom: 12px;
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.news__item {
+  position: relative;
+  display: flex;
+  padding-top: 18px;
+  padding-bottom: 17px;
+}
+
+.news__item--29sep {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.331);
+}
+
+.news__date {
+  position: relative;
+  padding: 10px 12px 0 12px;
+  margin-top: 10px;
+  width: 50px;
+  height: 40px;
+  font-size: 13px;
+  text-align: center;
+  color: white;
+  background-color: black;
+  font-family: "PT_Sans_Narrow_Regular";
+  line-height: 15px;
+}
+.news__date::before {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  left: -2px;
+  width: 54px;
+  height: 10px;
+  background-image: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/date-bottom.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.news__date time {
+  font-size: 30px;
+  line-height: 20px;
+}
+
+.news__txt {
+  padding-left: 18px;
+  font-family: "PT_Sans_Narrow_Regular";
+}
+
+.news__item--9sep {
+  display: none;
+}
+
+.button {
+  font-size: 18px;
+  font-family: "PT_Sans_Narrow_Bold";
+  text-transform: uppercase;
+  border: 1px solid #e5ddd5;
+  cursor: pointer;
+  background-color: #f8f5f2;
+}
+
+.button--news {
+  margin-top: 5px;
+  margin-bottom: 26px;
+  padding: 12px 89px 13px 90px;
+}
+
+@media (min-width: 768px) {
+  .news {
+    max-width: 768px;
+  }
+  .news__wrapper {
+    position: relative;
+    padding: 0 64px;
+    border-bottom: 1ps solid rgba(128, 128, 128, 0.378);
+  }
+  .news__title {
+    padding-top: 53px;
+    padding-bottom: 12px;
+    text-align: start;
+    font-size: 40px;
+  }
+  .news__posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .news__item {
+    position: relative;
+    display: flex;
+    padding-top: 48px;
+    padding-bottom: 35px;
+  }
+  .news__item--29sep {
+    border-bottom: none;
+  }
+  .news__txt {
+    padding-left: 18px;
+    padding-right: 30px;
+  }
+  .news__txt--span {
+    display: none;
+  }
+  .news__item--9sep {
+    display: none;
+  }
+  .button {
+    font-size: 18px;
+    font-family: "PT_Sans_Narrow_Bold";
+    text-transform: uppercase;
+    border: 1px solid #e5ddd5;
+    cursor: pointer;
+    background-color: #f8f5f2;
+  }
+  .button--news {
+    position: absolute;
+    top: 38px;
+    right: 65px;
+    margin-top: 5px;
+    margin-bottom: 26px;
+    padding: 12px 30px 13px 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .news__item--9sep {
+    display: block;
+  }
+  .news {
+    max-width: 1200px;
+  }
+  .news__wrapper {
+    position: relative;
+    padding: 0 120px;
+    border-bottom: 1ps solid rgba(128, 128, 128, 0.378);
+  }
+  .news__title {
+    padding-top: 60px;
+    padding-bottom: 12px;
+    padding-left: 70px;
+    text-align: start;
+    font-size: 40px;
+  }
+  .news__posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .news__item {
+    position: relative;
+    display: flex;
+    padding-top: 48px;
+    padding-bottom: 40px;
+  }
+  .news__item--29sep {
+    border-bottom: none;
+  }
+  .news__txt {
+    padding-left: 18px;
+    padding-right: 30px;
+  }
+  .news__txt--span {
+    display: none;
+  }
+  .button--news {
+    position: absolute;
+    top: 47px;
+    right: 120px;
+    margin-top: 5px;
+    margin-bottom: 26px;
+    padding: 12px 30px 13px 30px;
+  }
+}
+.reviews {
+  max-width: 320px;
+  color: black;
+  background-color: #f8f5f2;
+  background-image: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/footer-header.png);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+}
+
+.reviews__wrapper {
+  padding: 30px 20px 62px 20px;
+}
+
+.reviews__title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+}
+
+.reviews__body {
+  display: flex;
+  padding-top: 30px;
+}
+
+.body__img {
+  width: 50px;
+  height: 49px;
+  padding-top: 10px;
+}
+
+.text__title {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 24px;
+}
+
+.text__description {
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  font-family: "PT_Sans_Narrow_Regular";
+}
+
+.reviews-btn {
+  display: none;
+}
+
+.prev-btn {
+  display: none;
+}
+
+.next-btn {
+  display: none;
+}
+
+.body__img-desc {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .reviews {
+    position: relative;
+    max-width: 768px;
+    color: black;
+    background-color: #f8f5f2;
+    background-image: none;
+  }
+  .reviews__wrapper {
+    padding: 45px 64px 70px;
+  }
+  .reviews__title {
+    text-transform: uppercase;
+    text-align: start;
+    font-size: 40px;
+    padding-bottom: 50px;
+  }
+  .reviews__wrapper-body {
+    display: flex;
+  }
+  .reviews__body {
+    display: flex;
+    padding-top: 30px;
+    border: 1px solid rgba(128, 128, 128, 0.246);
+  }
+  .body__img {
+    display: none;
+  }
+  .body__img-desc {
+    display: block;
+    width: 81px;
+    height: 81px;
+    border-radius: 50%;
+    margin: 10px 10px 40px 35px;
+  }
+  .text__title {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 24px;
+  }
+  .text__description {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    font-family: "PT_Sans_Narrow_Regular";
+  }
+  .reviews-btn {
+    display: block;
+    position: absolute;
+    top: 38px;
+    right: 65px;
+    padding: 11px 22px 13px 24px;
+  }
+  .prev-btn {
+    display: block;
+    width: 60px;
+    background: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/prev.png) no-repeat 50% 50%;
+  }
+  .next-btn {
+    display: block;
+    width: 60px;
+    background: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/next.png) no-repeat 50% 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .reviews {
+    position: relative;
+    max-width: 1200px;
+    color: black;
+    background-color: #f8f5f2;
+  }
+  .reviews__wrapper {
+    padding: 45px 120px;
+  }
+  .reviews__title {
+    text-transform: uppercase;
+    text-align: start;
+    font-size: 40px;
+    padding-left: 70px;
+    padding-bottom: 50px;
+  }
+  .reviews__wrapper-body {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 52px;
+  }
+  .reviews__body {
+    display: flex;
+    padding-top: 0;
+    border: 1px solid rgba(128, 128, 128, 0.246);
+  }
+  .body__img {
+    display: none;
+  }
+  .body__img-desc {
+    display: block;
+    width: 250px;
+    height: 160px;
+    border-radius: 0;
+    margin: 0;
+  }
+  .text__title {
+    margin: 0;
+    padding-top: 30px;
+    padding-left: 70px;
+    font-size: 24px;
+  }
+  .text__description {
+    padding-left: 70px;
+    padding-right: 60px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    font-family: "PT_Sans_Narrow_Regular";
+  }
+  .reviews-btn {
+    display: block;
+    position: absolute;
+    top: 38px;
+    right: 120px;
+    padding: 11px 22px 13px 24px;
+  }
+  .prev-btn {
+    display: block;
+    width: 55px;
+    background: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/prev.png) no-repeat 50% 50%;
+  }
+  .next-btn {
+    display: block;
+    width: 55px;
+    background: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/next.png) no-repeat 50% 50%;
+  }
+}
+.main-footer {
+  max-width: 320px;
+  background-color: #292929;
+}
+
+.footer__adress {
+  padding: 0 20px;
+}
+
+.adress__title {
+  margin: 0;
+  padding: 35px 0 10px 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.adress__txt {
+  font-family: "PT_Sans_Narrow_Regular";
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  padding-bottom: 15px;
+}
+
+.adress__span {
+  display: none;
+}
+
+.footer__button {
+  display: block;
+  color: white;
+  background-color: #292929;
+  margin: 0 20px;
+  padding: 11px 0 12px;
+  text-align: center;
+}
+
+.footer__socials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 20px;
+}
+
+.socials__title {
+  display: none;
+}
+
+.socials-link {
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid rgba(128, 128, 128, 0.323);
+}
+
+.socials-link-vk {
+  background-image: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/BK.png);
+}
+
+.socials-link-fb {
+  background-image: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/fb.png);
+}
+
+.socials-link-inst {
+  background-image: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/inst.png);
+}
+
+.footer__copyright {
+  text-align: center;
+  padding: 35px 20px;
+}
+
+.copyright__title {
+  font-size: 18px;
+  font-family: "PT_Sans_Narrow_Regular";
+  padding-bottom: 10px;
+}
+
+.copyright__btn {
+  display: block;
+  color: white;
+  background-color: #292929;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .main-footer {
+    max-width: 768px;
+    background-color: #292929;
+  }
+  .footer__wrapper {
+    position: relative;
+    padding: 0 64px;
+  }
+  .footer__adress {
+    width: 320px;
+    padding: 12px 0 10px 0;
+  }
+  .adress__title {
+    margin: 0;
+    padding: 35px 0 10px 0;
+    font-size: 18px;
+    text-align: start;
+    text-transform: uppercase;
+  }
+  .adress__txt {
+    font-family: "PT_Sans_Narrow_Regular";
+    font-size: 18px;
+    text-align: start;
+    letter-spacing: 0px;
+    padding-bottom: 15px;
+  }
+  .adress__span {
+    display: block;
+  }
+  .footer__button {
+    display: none;
+    color: white;
+    background-color: #292929;
+    margin: 0 20px;
+    padding: 11px 0 12px;
+    text-align: center;
+  }
+  .footer__socials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 20px;
+    padding-bottom: 70px;
+  }
+  .socials__title {
+    display: none;
+  }
+  .socials-link {
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid rgba(128, 128, 128, 0.323);
+  }
+  .socials-link-vk {
+    background-image: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/BK.png);
+  }
+  .socials-link-fb {
+    background-image: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/fb.png);
+  }
+  .socials-link-inst {
+    background-image: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/inst.png);
+  }
+  .footer__copyright {
+    position: absolute;
+    top: 15px;
+    right: 50px;
+    text-align: center;
+    padding: 35px 20px;
+  }
+  .copyright__title {
+    font-size: 18px;
+    font-family: "PT_Sans_Narrow_Regular";
+    padding-bottom: 10px;
+  }
+  .copyright__btn {
+    display: block;
+    color: white;
+    background-color: #292929;
+    padding: 10px 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-footer {
+    max-width: 1200px;
+    background-color: #292929;
+  }
+  .footer__wrapper {
+    display: flex;
+    gap: 80px;
+    position: relative;
+    padding: 0 120px;
+  }
+  .footer__adress {
+    width: 320px;
+    padding: 12px 0 10px 0;
+  }
+  .adress__title {
+    margin: 0;
+    padding: 35px 0 10px 0;
+    font-size: 18px;
+    text-align: start;
+    text-transform: uppercase;
+  }
+  .adress__txt {
+    font-family: "PT_Sans_Narrow_Regular";
+    font-size: 18px;
+    text-align: start;
+    letter-spacing: 0px;
+    padding-bottom: 15px;
+  }
+  .adress__span {
+    display: block;
+  }
+  .footer__button {
+    display: none;
+    color: white;
+    background-color: #292929;
+    margin: 0 20px;
+    padding: 11px 0 12px;
+    text-align: center;
+  }
+  .footer__socials {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7px;
+    padding-top: 90px;
+    padding-bottom: 70px;
+  }
+  .socials__title {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 25px;
+    font-size: 18px;
+    font-family: "PT_Sans_Narrow_Regular";
+  }
+  .socials-link {
+    height: 47px;
+    width: 47px;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid rgba(128, 128, 128, 0.323);
+  }
+  .socials-link-vk {
+    background-image: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/BK.png);
+  }
+  .socials-link-fb {
+    background-image: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/fb.png);
+  }
+  .socials-link-inst {
+    background-image: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/inst.png);
+  }
+  .footer__copyright {
+    position: inherit;
+    top: inherit;
+    right: inherit;
+    text-align: center;
+    padding: 50px 0px 45px 165px;
+  }
+  .copyright__title {
+    font-size: 18px;
+    font-family: "PT_Sans_Narrow_Regular";
+    padding-bottom: 10px;
+  }
+  .copyright__btn {
+    display: block;
+    color: white;
+    background-color: #292929;
+    padding: 10px 20px;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,211 @@
+.features{
+    max-width: 320px;
+    background-color: #242424;
+    background-image: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/features__footer.png);
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+}
+
+.features__wrapper{
+    overflow: hidden;
+}
+
+.slider__slide{
+    position: relative;
+}
+
+.slider__slide input{
+    display: none;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+  background-color: white;
+}
+
+.slider-controls {
+    position: inherit;
+    padding-top: 15px;
+    padding-left: 120px;
+  }
+  
+  .slider-controls label {
+    display: inline-block;
+    margin: 0 5px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid white ;
+    rotate: (45deg);
+    cursor: pointer;
+  }
+
+.features__slider{
+    width: 300%;
+
+    .features__item{
+        width: 320px;
+        float: left;
+
+        .features__logo{
+            padding: 35px 0 0 113px;
+        }
+
+        .features__title{
+            font-size: 30px;
+            padding: 29px 0 0 115px;
+        }
+
+        .features__txt{
+            padding: 18px 40px 80px 40px;
+            font-size: 20px;
+            text-align: center;
+            font-family: "PT_Sans_Narrow_Regular";
+        }
+
+    }
+
+    #btn-1:checked ~ .features__items .features__item {
+        transform: translate(0);
+      }
+      
+      #btn-2:checked ~ .features__items .features__item {
+        transform: translate(-320px);
+      }
+      
+      #btn-3:checked ~ .features__items .features__item {
+        transform: translate(-640px);
+      }
+
+}
+
+.features__footer{
+    border: 1px solid black;
+}
+
+@media(min-width:$tablet-width){
+
+    .features{
+        max-width: 768px;
+        height: 574px;
+        background-image: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/features__footer--tablet.png);
+        background-repeat: no-repeat;
+        background-position: 0% 100%;
+    }
+
+    .slider-controls{
+        display: none;
+    }
+
+    .features__items{
+        display: flex;
+        flex-direction: column;        
+    
+        .features__item{
+            position: relative;
+            display: flex;
+            width: 768px;
+        
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 100px;
+            width: 600px;
+            height: 1px;
+            background-color: rgba(128, 128, 128, 0.294);
+        }
+            
+            .features__logo{
+                padding: 42px 0 40px 95px;
+                height: 94px;
+                width: 95px;
+            }
+
+            .item__body{
+                width: 480px;
+    
+                .features__title{
+                    font-size: 30px;
+                    padding: 40px 0 0 35px;
+                }
+        
+                .features__txt{
+                    display: block;
+                    padding: 20px 320px 0 35px;
+                    width: 100%;
+                    font-size: 20px;
+                    text-align: start;
+                    font-family: "PT_Sans_Narrow_Regular";
+                }
+        
+            }
+    
+        }
+    }
+    #btn-1:checked ~ .features__items .features__item {
+        transform: translate(0);
+      }
+      
+      #btn-2:checked ~ .features__items .features__item {
+        transform: translate(0px);
+      }
+      
+      #btn-3:checked ~ .features__items .features__item {
+        transform: translate(0px);
+      }
+}
+
+@media(min-width:$desktop-width){
+    .features{
+        max-width: 1200px;
+        height: 460px;
+        background-image: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/features__footer--desktop.png);
+    }
+
+    .slider__slide{
+        padding: 0 120px;
+    }
+
+    .features__items{
+        display: flex;
+        flex-direction: row;
+    
+        .features__item{
+            display: flex;
+            flex-direction: column;
+            width: 320px;
+
+            &::after{
+                height: 0px;
+            }
+            
+            .features__logo{
+                padding: 82px 0 0px 115px;
+                height: 94px;
+                width: 95px;
+            }
+
+            .item__body{
+                width: 280px;
+    
+                .features__title{
+                    font-size: 30px;
+                    padding: 30px 0 0 115px;
+                }
+        
+                .features__txt{
+                    display: block;
+                    padding: 20px 320px 0 45px;
+                    width: 250px;
+                    font-size: 20px;
+                    text-align: center;
+                    font-family: "PT_Sans_Narrow_Regular";
+                }
+        
+            }
+    
+        }
+    }
+
+}

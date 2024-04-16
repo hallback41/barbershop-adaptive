@@ -1,0 +1,293 @@
+.main-footer{
+    max-width: 320px;
+    background-color: $bg-darkgrey;
+}
+
+.footer__adress{
+    padding: 0 20px;
+}
+
+.adress__title{
+    margin: 0;
+    padding: 35px 0 10px 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.adress__txt{
+    font-family: "PT_Sans_Narrow_Regular";
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    padding-bottom: 15px;
+}
+
+.adress__span{
+    display: none;
+}
+
+.footer__button{
+    display: block;
+    color: white;
+    background-color: $bg-darkgrey;
+    margin: 0 20px;
+    padding: 11px 0 12px;
+    text-align: center;
+}
+
+.footer__socials{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 20px;
+}
+
+.socials__title{
+    display: none;
+}
+
+.socials-link{
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid rgba(128, 128, 128, 0.323);
+
+}
+
+.socials-link-vk{
+    background-image: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/BK.png);
+}
+
+.socials-link-fb{
+    background-image: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/fb.png);
+}
+
+.socials-link-inst{
+    background-image: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/inst.png);
+}
+
+.footer__copyright{
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.copyright__title{
+    font-size: 18px;
+    font-family: "PT_Sans_Narrow_Regular";
+    padding-bottom: 10px;
+}
+
+.copyright__btn{
+    display: block;
+    color: white;
+    background-color: $bg-darkgrey;
+    padding: 10px;
+}
+
+@media (min-width:$tablet-width){
+    .main-footer{
+        max-width: 768px;
+        background-color: $bg-darkgrey;
+    }
+    
+    .footer__wrapper{
+        position: relative;
+        padding: 0 64px;
+    }
+
+    .footer__adress{
+        width: 320px;
+        padding:12px 0 10px 0;
+    }
+    
+    .adress__title{
+        margin: 0;
+        padding: 35px 0 10px 0;
+        font-size: 18px;
+        text-align: start;
+        text-transform: uppercase;
+    }
+    
+    .adress__txt{
+        font-family: "PT_Sans_Narrow_Regular";
+        font-size: 18px;
+        text-align: start;
+        letter-spacing: 0px;
+        padding-bottom: 15px;
+    }
+
+    .adress__span{
+        display: block;
+    }
+    
+    .footer__button{
+        display: none; 
+        color: white;
+        background-color: $bg-darkgrey;
+        margin: 0 20px;
+        padding: 11px 0 12px;
+        text-align: center;
+    }
+    
+    .footer__socials{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-top: 20px;
+        padding-bottom: 70px;
+    }
+    
+    .socials__title{
+        display: none;
+    }
+
+    .socials-link{
+        height: 100px;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 1px solid rgba(128, 128, 128, 0.323);
+    
+    }
+    
+    .socials-link-vk{
+        background-image: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/BK.png);
+    }
+    
+    .socials-link-fb{
+        background-image: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/fb.png);
+    }
+    
+    .socials-link-inst{
+        background-image: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/inst.png);
+    }
+    
+    .footer__copyright{
+        position: absolute;
+        top: 15px;
+        right: 50px;
+        text-align: center;
+        padding: 35px 20px;
+    }
+    
+    .copyright__title{
+        font-size: 18px;
+        font-family: "PT_Sans_Narrow_Regular";
+        padding-bottom: 10px;
+    }
+    
+    .copyright__btn{
+        display: block;
+        color: white;
+        background-color: $bg-darkgrey;
+        padding: 10px 20px;
+    }
+}
+
+@media (min-width:$desktop-width){
+
+    .main-footer{
+        max-width: 1200px;
+        background-color: $bg-darkgrey;
+    }
+    
+    .footer__wrapper{
+        display: flex;
+        gap: 80px;
+        position: relative;
+        padding: 0 120px;
+    }
+
+    .footer__adress{
+        width: 320px;
+        padding:12px 0 10px 0;
+    }
+    
+    .adress__title{
+        margin: 0;
+        padding: 35px 0 10px 0;
+        font-size: 18px;
+        text-align: start;
+        text-transform: uppercase;
+    }
+    
+    .adress__txt{
+        font-family: "PT_Sans_Narrow_Regular";
+        font-size: 18px;
+        text-align: start;
+        letter-spacing: 0px;
+        padding-bottom: 15px;
+    }
+
+    .adress__span{
+        display: block;
+    }
+    
+    .footer__button{
+        display: none; 
+        color: white;
+        background-color: $bg-darkgrey;
+        margin: 0 20px;
+        padding: 11px 0 12px;
+        text-align: center;
+    }
+    
+    .footer__socials{
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 7px;
+        padding-top: 90px;
+        padding-bottom: 70px;
+    }
+
+    .socials__title{
+        display: block;
+        position: absolute;
+        top: 50px;
+        left: 25px;
+        font-size: 18px;
+        font-family: "PT_Sans_Narrow_Regular";
+
+    }
+    
+    .socials-link{
+        height: 47px;
+        width: 47px;
+        background-size: 30%;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 1px solid rgba(128, 128, 128, 0.323);
+    
+    }
+    
+    .socials-link-vk{
+        background-image: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/BK.png);
+    }
+    
+    .socials-link-fb{
+        background-image: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/fb.png);
+    }
+    
+    .socials-link-inst{
+        background-image: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/inst.png);
+    }
+    
+    .footer__copyright{
+        position: inherit;
+        top: inherit;
+        right: inherit;
+        text-align: center;
+        padding: 50px 0px 45px 165px;
+    }
+    
+    .copyright__title{
+        font-size: 18px;
+        font-family: "PT_Sans_Narrow_Regular";
+        padding-bottom: 10px;
+    }
+    
+    .copyright__btn{
+        display: block;
+        color: white;
+        background-color: $bg-darkgrey;
+        padding: 10px 20px;
+    }
+}

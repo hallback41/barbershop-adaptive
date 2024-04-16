@@ -1,0 +1,293 @@
+$bg-darkgrey: #292929;
+$bg-lightgrey: #f8f5f2;
+$tablet-width: 768px;
+$desktop-width: 1200px;
+
+@font-face {
+    font-family: "PT_Sans_Narrow_Bold";
+    src: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/FONTS/PTN77F.ttf);
+}
+
+@font-face {
+    font-family: "PT_Sans_Narrow_regular";
+    src: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/FONTS/PTN57F.ttf);
+}
+
+body{
+    min-width: 320px;
+    margin: 0;
+    padding: 0;
+
+    font-size: 18px;
+    line-height: 27px;
+    font-family: "PT_Sans_Narrow_Bold", sans-serif;
+    color: #f7f4f1;
+    font-style: normal;
+
+    border-color: $bg-darkgrey;
+    background-color: #0e0d0d79;
+}
+
+h2{
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+// STATS
+
+
+.container-centerer{
+    margin: 0 auto;
+}
+
+.container-inside{
+    padding: 0 20px;
+}
+
+.stats{
+    max-width: 320px;
+    background-color: #353535;
+}
+
+.stats__wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 184px repeat(4, 79px);
+}
+
+.bg_1{
+    background-color: #404040;
+}
+
+.bg_2{
+    background-color: #4e4e4e;
+}
+
+.bg_3{
+    background-color: #404040;
+}
+
+.bg_4{
+    background-color: #4e4e4e;
+}
+
+.stats__disclaimer{
+    background-color: #fff;
+
+    .stats__title{
+        display: block;
+        font-size: 30px;
+        text-transform: uppercase;
+        color: black;
+        text-align: center;
+        line-height: 30px;
+        letter-spacing: 0.1px;
+
+        padding: 26px 0 17px 0;
+    }
+
+    .stats__txt{
+        display: block;
+        padding: 0 20px;
+
+        color: black;
+        text-align: center;
+        font-size: 20px;
+        letter-spacing: 0.1px;
+        line-height: 26px;
+        font-family: "PT_Sans_Narrow_Regular";
+        padding-bottom: 27px;
+
+    }
+}
+
+.stats-item{
+    display: flex;
+    justify-content: space-between;
+
+    .stats-item__amount{
+        font-size: 40px;
+        text-align: center;
+        padding: 16px 0 20px 20px ;  
+    }
+    sup{
+        font-size: 22px;
+    }
+
+    .stats-item__description{
+        width: 110px;
+        text-align: right;
+        line-height: 18px;
+        font-family: "PT_Sans_Narrow_regular";
+
+        padding-top: 18px;
+        padding-right: 20px;
+    }
+}
+
+@media (min-width:$tablet-width){
+    .bg_1{
+        background-color: #404040;
+    }
+
+    .bg_2{
+        background-color: #4e4e4e;
+    }
+
+    .bg_3{
+        background-color: #353535;
+    }
+
+    .bg_4{
+        background-color: #404040;
+    }
+
+    .stats{
+        position: relative;
+        max-width: 768px;
+    }
+
+    .container-inside{
+        padding: 0 64px;
+    }
+
+
+    .stats__wrapper{
+        position: inherit;
+        top: -185px;
+        height: 320px;
+        padding: 0 64px;
+        display: grid;
+        grid-template-columns: 320px 320px;
+        grid-template-rows: 185px repeat(2, 160px);
+        background-image: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/grey.png);
+        background-repeat: no-repeat;
+        background-position: 0px 185px;
+
+    }
+
+    .stats__disclaimer{
+        position: relative;
+        display: flex;
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+        &::before{
+            content: "* — приведённые данные ложь";
+            position: absolute;
+            top: 130px;
+            left: 40px;
+            color: rgba(0, 0, 0, 0.474);
+            font-size: 20px;
+            font-family: "PT_Sans_Narrow_regular";
+        }
+
+        &::after{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 45px;
+            left: -20px;
+            border: 20px solid white;
+            border-top-color: white;
+            border-bottom-color:transparent ;
+            border-right-color:transparent ;
+            border-left-color:transparent ;
+        }
+
+        .stats__title{
+            width: 260px;
+            padding: 33px 0px 0px 42px;
+
+            font-size: 40px;
+            text-transform: none;
+            line-height: 38px;
+            text-align: start;
+        }
+
+        .stats__txt{
+            display: block;
+            width: 210px;
+            
+            text-align: start;
+            padding: 35px 0 0 50px;
+        }
+    }
+
+    .stats-item{
+        flex-direction: column;
+        padding-left:34px;
+
+        .stats-item__amount{
+            font-size: 70px;
+            text-align: start;
+
+            padding: 34px 0 0 0;
+
+            sup{
+                font-size: 38px;
+            }
+        }
+
+        .stats-item__description{
+            width: 200px;
+            font-size: 20px;
+            text-align: start;
+
+            padding-bottom:35px;
+        }
+    }
+}
+
+@media (min-width:$desktop-width){
+    .stats{
+        position: relative;
+        max-width: 1200px;
+    }
+
+    .stats__wrapper{
+        position: relative;
+        top: -160px;
+        height: 160px;
+        padding: 0 120px;
+        grid-template-columns: 320px 320px 320px;
+        grid-template-rows: repeat(2, 160px);
+        background-image: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/grey-desktop.png);
+        background-position: 0px 160px;
+
+
+        .stats__disclaimer{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 2;
+
+            &::before{
+                top: 265px;
+                left: 40px;
+            }
+
+            &::after{
+                top: 40px;
+                left: -22px;
+                border: 22px solid white;
+                border-top-color: white;
+                border-bottom-color:transparent ;
+                border-right-color:transparent ;
+                border-left-color:transparent ;
+            }
+
+            .stats__txt{
+                padding:45px 0 0 40px;
+            }
+        
+        }
+
+    }
+}

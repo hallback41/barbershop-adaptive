@@ -1,0 +1,217 @@
+.news{
+    max-width: 320px;
+    background-color: #f8f5f2;
+    color: black;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.378);
+
+}
+
+.news__wrapper{
+    padding: 0 20px;
+}
+
+.news__title{
+    padding-top: 38px;
+    padding-bottom: 12px;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.news__item{
+    position: relative;
+    display: flex;
+    padding-top: 18px;
+    padding-bottom: 17px;
+}
+
+.news__item--29sep{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.331);
+}
+
+
+
+
+.news__date{
+    position: relative;
+    padding: 10px 12px 0 12px;
+    margin-top:10px ;
+    width: 50px;
+    height: 40px;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-family: "PT_Sans_Narrow_Regular";
+    line-height: 15px;
+
+    &::before{
+        content: "";
+        position: absolute;
+        bottom: -9px;
+        left: -2px;
+        width: 54px;
+        height: 10px;
+        background-image: url(/PROJECTS__NEW/BARBERSHOP__FLEX/BARBERSHOP--MAIN-PAGE/IMG/date-bottom.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.news__date time{
+    font-size: 30px;
+    line-height: 20px;
+    
+}
+
+.news__txt{
+    padding-left: 18px;
+    font-family: "PT_Sans_Narrow_Regular";
+}
+
+.news__item--9sep{
+    display: none;
+}
+
+.button{
+    font-size: 18px;
+    font-family: "PT_Sans_Narrow_Bold";
+    text-transform: uppercase;
+    border: 1px solid #e5ddd5;
+    cursor: pointer;
+    background-color: #f8f5f2 ;
+}
+
+.button--news{
+    margin-top: 5px;
+    margin-bottom: 26px;
+    padding: 12px 89px 13px 90px;
+}
+
+@media (min-width:$tablet-width){
+    
+    .news{
+        max-width: 768px;
+    }
+    
+    .news__wrapper{
+        position: relative;
+        padding: 0 64px;
+        border-bottom: 1ps solid rgba(128, 128, 128, 0.378);
+    }
+    
+    .news__title{
+        padding-top: 53px;
+        padding-bottom: 12px;
+        text-align: start;
+        font-size: 40px;
+    }
+    
+    .news__posts{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .news__item{
+        position: relative;
+        display: flex;
+        padding-top: 48px;
+        padding-bottom: 35px;
+    }
+    
+    .news__item--29sep{
+        border-bottom: none;
+    }
+    
+    .news__txt{
+        padding-left: 18px;
+        padding-right: 30px;
+    }
+    
+    .news__txt--span{
+        display: none;
+    }
+
+    .news__item--9sep{
+        display: none;
+    }
+    
+    .button{
+        font-size: 18px;
+        font-family: "PT_Sans_Narrow_Bold";
+        text-transform: uppercase;
+        border: 1px solid #e5ddd5;
+        cursor: pointer;
+        background-color: #f8f5f2 ;
+    }
+    
+    .button--news{
+        position: absolute;
+        top: 38px;
+        right: 65px;
+        margin-top: 5px;
+        margin-bottom: 26px;
+        padding: 12px 30px 13px 30px;
+    }
+}
+
+@media (min-width:$desktop-width){
+    .news__item--9sep{
+        display: block;
+    }
+
+    .news{
+        max-width: 1200px;
+    }
+    
+    .news__wrapper{
+        position: relative;
+        padding: 0 120px;
+        border-bottom: 1ps solid rgba(128, 128, 128, 0.378);
+    }
+    
+    .news__title{
+        padding-top: 60px;
+        padding-bottom: 12px;
+        padding-left: 70px;
+        text-align: start;
+        font-size: 40px;
+    }
+    
+    .news__posts{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .news__item{
+        position: relative;
+        display: flex;
+        padding-top: 48px;
+        padding-bottom: 40px;
+    }
+    
+    .news__item--29sep{
+        border-bottom:none;
+    }
+
+    .news__txt{
+        padding-left: 18px;
+        padding-right: 30px;
+    }
+    
+    .news__txt--span{
+        display: none;
+    }
+    
+    .button--news{
+        position: absolute;
+        top: 47px;
+        right: 120px;
+        margin-top: 5px;
+        margin-bottom: 26px;
+        padding: 12px 30px 13px 30px;
+    }
+}
+
+
+
